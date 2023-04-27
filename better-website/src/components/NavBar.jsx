@@ -20,6 +20,9 @@ function NavBar() {
           <a href="#contact">Contact</a>
         </li>
       </ul>
+      <div className="hidden w-full h-0 flex justify-center absolute top-6">
+        <div className="border-b bg-blue-900 rounded-full w-8 h-8">&nbsp;</div>
+      </div>
     </nav>
   );
 }
