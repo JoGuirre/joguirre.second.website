@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div id="hero-section" className="border w-screen">
+    <div id="hero-section" className="mt-16">
       Hero
     </div>
   );
