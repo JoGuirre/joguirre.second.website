@@ -1,15 +1,14 @@
 import { useState } from "react";
 import "./App.css";
+import Hero from "./components/Hero";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div className="">
-        <h1>header 1</h1>
-        <h2>header 2</h2>
-        <h3>header 3</h3>
+      <div className="border border-red-500 w-auto flex">
+        <Hero />
       </div>
     </>
   );
