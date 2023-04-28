@@ -1,36 +1,36 @@
 [
     {
-        "key": "0",
+        "id": "0",
         "title": "Introduction",
         "content": "I was initially drawn to web development due to my limited experience with programming in the Navy, and after pursuing computer science studies for a brief period. Since then, I have been completely self-taught, and specialize in HTML/CSS, JavaScript, Reactjs, and Bootstrap."
     },
     {
-        "key": "1",
+        "id": "1",
         "title": "Challenges and Persistence",
         "content": "As with any project, challenges always arise, but I enjoy the problem-solving process and overcome them with persistence and extensive online research."
     },
     {
-        "key": "2",
+        "id": "2",
         "title": "Projects and Achievements",
         "content": "One project that I am particularly proud of is a Natural Language Processing web app I created using an API."
     },
     {
-        "key": "3",
+        "id": "3",
         "title": "Approach to Problem-Solving",
         "content": "When it comes to problem-solving, I take a methodical approach by first considering different possible solutions, followed by trial and error, and further research."
     },
     {
-        "key": "4",
+        "id": "4",
         "title": "Staying Up-to-Date",
         "content": "I stay up-to-date with the latest trends and developments in web development through various sources such as YouTube, Reddit, and newsletters."
     },
     {
-        "key": "5",
+        "id": "5",
         "title": "Working with Clients",
         "content": "I work closely with clients to ensure their website meets their needs and goals through constant communication."
     },
     {
-        "key": "6",
+        "id": "6",
         "title": "Passion for Web Development",
         "content": "What sets me apart from other web developers is my genuine love for what I do. The challenge of web development keeps me in a 'grind mindset' and I find joy in the process of bringing a website to life."
     }

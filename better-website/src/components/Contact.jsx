@@ -10,9 +10,11 @@ function Contact() {
   }
 
   return (
-    <div id="" className="p-4 m-6 bg-blue-300 rounded-xl">
-      <h1 id="">Contact Me</h1>
-      <div className="">
+    <div id="" className="">
+      <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6">
+        Contact Me
+      </h1>
+      <div className="p-4 m-6 mt-2 bg-blue-300 rounded-xl">
         <div className="">
           <h1>Like what you see?</h1>
           <h2>Get in touch with me and let's work something out!</h2>
