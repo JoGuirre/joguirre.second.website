@@ -30,7 +30,7 @@ function Paragraph({ aboutMe }) {
   };
 
   return (
-    <div id="about-paragraph-container" className="px-6 mt-3">
+    <div id="about-paragraph-container" className="px-6 ">
       {aboutMe.map((section) => {
         return (
           <div
@@ -55,7 +55,7 @@ function Paragraph({ aboutMe }) {
               <div id="paragrpah-content-container">
                 <p
                   id="paragraph-content"
-                  className="pl-4 pr-2 text-black font-medium"
+                  className="pl-4 pr-2 pt-2 text-black font-medium"
                 >
                   {section.content}
                 </p>
