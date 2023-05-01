@@ -32,7 +32,7 @@ function Paragraph({ aboutMe }) {
   return (
     <div
       id="about-paragraph-container"
-      className="px-6 drop-shadow-2xl shadow-white"
+      className="px-6 drop-shadow-[5px_7px_3px_#519db0]"
     >
       {aboutMe.map((section) => {
         return (

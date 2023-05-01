@@ -17,8 +17,8 @@ function Hero() {
         <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
         <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
       </div>
-      <div id="hero-object" className="h-2/3 mx-4 mt-6">
-        <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center">
+      <div id="hero-object" className="h-2/3 mx-4 mt-6 ">
+        <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center ">
           <img
             src={codePic}
             alt="picture of coding screen"

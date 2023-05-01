@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <nav
       id="navbar-container"
-      className="sticky top-0 border-b rounded-b-sm shadow-md shadow-gray-600 bg-transparent backdrop-blur-md"
+      className="sticky top-0 border-b rounded-b-sm shadow-md shadow-gray-600 bg-transparent backdrop-blur-md z-50"
     >
       <ul className="flex justify-around text-xl font-semibold pt-2 mb-1">
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
