@@ -10,7 +10,7 @@ function Contact() {
   }
 
   return (
-    <div id="" className="">
+    <div id="contact-container" className="">
       {/* <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6 pb-3">
         Contact Me
       </h1> */}

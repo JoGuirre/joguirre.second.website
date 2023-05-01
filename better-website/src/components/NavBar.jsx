@@ -8,16 +8,16 @@ function NavBar() {
     >
       <ul className="flex justify-around text-xl font-semibold pt-2 mb-1">
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#home">Home</a>
+          <a href="#hero-container">Home</a>
         </li>
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#about">About</a>
+          <a href="#about-container">About</a>
         </li>
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#projects">Projects</a>
+          <a href="#projects-container">Projects</a>
         </li>
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#contact">Contact</a>
+          <a href="#contact-container">Contact</a>
         </li>
       </ul>
 

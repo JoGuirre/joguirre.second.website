@@ -10,7 +10,7 @@ function App() {
     <>
       <div
         id="page-container"
-        className="w-auto h-screen relative overflow-x-hidden"
+        className="w-auto h-screen relative overflow-x-hidden scroll-smooth"
       >
         <NavBar />
         <Hero />
