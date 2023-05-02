@@ -10,15 +10,13 @@ function App() {
     <>
       <div
         id="page-container"
-        className="w-auto h-screen relative overflow-x-hidden scroll-smooth"
+        className="w-auto h-screen relative overflow-x-hidden scroll-smooth bg-gradient-to-b from-gray-900 to-slate-600"
       >
         <NavBar />
         <Hero />
-        <div className="bg-gradient-to-b from-gray-600 to-slate-600">
-          <About />
-          <Projects />
-          <Contact />
-        </div>
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </>
   );

@@ -50,10 +50,7 @@ function Hero() {
   }, [currentWordsIndex]);
 
   return (
-    <div
-      id="hero-container"
-      className="h-2/3 mb-[-55px] pb-16 bg-gradient-to-t from-gray-600 to-gray-900 mt-[-50px]"
-    >
+    <div id="hero-container" className="h-2/3 mb-[-55px] pb-16 mt-[-50px]">
       <div id="hero-object" className="mx-4 pt-16">
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
           <img
@@ -66,7 +63,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <WorkLinks className="border border-black" />
+      <WorkLinks />
       <div
         id="hero-words"
         className="h-2/5 flex-col pt-4 text-left pl-6 relative"
