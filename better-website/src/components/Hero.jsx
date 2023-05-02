@@ -56,7 +56,7 @@ function Hero() {
   }, [currentWordsIndex]);
 
   return (
-    <div id="hero-container" className="h-2/3">
+    <div id="hero-container" className="h-2/3 mb-[-55px]">
       <div
         id="hero-words"
         className="h-2/5 flex-col text-left pt-6 pl-6 bg-gradient-to-tr from-gray-600 to-gray-900 relative"
