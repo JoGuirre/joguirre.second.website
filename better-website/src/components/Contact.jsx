@@ -6,11 +6,11 @@ function Contact() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div id="contact-container" className="relative mt-4 pb-4">
+    <div id="contact-container" className="relative mt-12 pb-4">
       {/* <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6 pb-3">
         Contact Me
       </h1> */}
-      <div className="p-4 m-6 mt-2 rounded-xl">
+      <div className="p-4 m-6 mt-2">
         <div className="">
           <h1 className="text-2xl font-bold">Like what you see?</h1>
           <h2 className="text-lg font-semibold pt-2">Contact me below!</h2>
