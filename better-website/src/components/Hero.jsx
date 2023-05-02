@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MyLogo from "./MyLogo";
+import WorkLinks from "./WorkLinks";
 
 import codePic from "../assets/code-pic.jpg";
 import codePic1 from "../assets/code-pic-1.jpg";
@@ -51,7 +52,7 @@ function Hero() {
   return (
     <div
       id="hero-container"
-      className="h-2/3 mb-[-55px] pb-16 bg-gradient-to-tr from-gray-600 to-gray-900 mt-[-50px]"
+      className="h-2/3 mb-[-55px] pb-16 bg-gradient-to-t from-gray-600 to-gray-900 mt-[-50px]"
     >
       <div id="hero-object" className="mx-4 pt-16">
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
@@ -65,9 +66,10 @@ function Hero() {
           </div>
         </div>
       </div>
+      <WorkLinks className="border border-black" />
       <div
         id="hero-words"
-        className="h-2/5 flex-col text-left pt-6 pl-6 relative"
+        className="h-2/5 flex-col pt-4 text-left pl-6 relative"
       >
         <h1 className="text-4xl font-bold pb-3">
           Hi, I'm{" "}

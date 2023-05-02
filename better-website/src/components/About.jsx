@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import aboutMe from "../utilities/aboutMe.json";
-import WorkLinks from "./WorkLinks";
+// import WorkLinks from "./WorkLinks";
 
 function About() {
   return (
-    <div id="about-container" className="pt-4">
-      <WorkLinks />
+    <div id="about-container" className="pt-16">
+      {/* <WorkLinks /> */}
       <h1 className="text-left pl-6 text-3xl font-bold mb-4">About Me</h1>
       <Paragraph aboutMe={aboutMe} />
     </div>

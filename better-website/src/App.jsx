@@ -14,9 +14,11 @@ function App() {
       >
         <NavBar />
         <Hero />
-        <About />
-        <Projects />
-        <Contact />
+        <div className="bg-gradient-to-b from-gray-600 to-slate-600">
+          <About />
+          <Projects />
+          <Contact />
+        </div>
       </div>
     </>
   );
