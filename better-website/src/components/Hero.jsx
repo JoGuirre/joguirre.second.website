@@ -17,9 +17,10 @@ function Hero() {
     "Guitar Player",
     "Gamer",
     "Cool Guy",
-    "Obscure Music Listener",
+    "Obscure Music Enthusiast",
     "Plant Dad",
     "Dog Lover",
+    "Stardew Farmer",
   ];
   const [highlightedText, setHighlightedText] = useState("");
 
