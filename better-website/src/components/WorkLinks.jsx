@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 function WorkLinks() {
   return (
-    <div className="flex justify-around mb-3 pb-4">
+    <div className="flex justify-around pb-4">
       <a
         href="https://www.linkedin.com/in/joshuacaguirre/"
         target="_blank"

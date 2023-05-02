@@ -66,7 +66,7 @@ function Hero() {
       <WorkLinks />
       <div
         id="hero-words"
-        className="h-2/5 flex-col pt-4 text-left pl-6 relative"
+        className="h-2/5 flex-col pt-2 text-left pl-6 relative"
       >
         <h1 className="text-4xl font-bold pb-3">
           Hi, I'm{" "}
