@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import NavBar from "./components/NavBar";
+import WorkLinks from "./components/WorkLinks";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       >
         <NavBar />
         <Hero />
+        <WorkLinks />
         <About />
         <Projects />
         <Contact />
