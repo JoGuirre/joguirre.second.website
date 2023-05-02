@@ -10,12 +10,12 @@ function Contact() {
       {/* <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6 pb-3">
         Contact Me
       </h1> */}
-      <div className="p-4 m-6 mt-2">
+      <div className="p-4 m-6 mt-2 relative">
         <div className="">
           <h1 className="text-2xl font-bold">Like what you see?</h1>
           <h2 className="text-lg font-semibold pt-2">Contact me below!</h2>
         </div>
-        <div className="rounded-lg p-4 mt-2 drop-shadow-[0px_7px_0px_#519db0] bg-white border border-black rounded-lg mb-1 mt-5  after:bg-transparent after:pointer-events-none">
+        <div className="rounded-lg p-4 mt-2 drop-shadow-[0px_7px_0px_#519db0] bg-white border border-black rounded-lg mb-1 mt-5 after:border after:border-black after:content-[''] after:absolute after:left-[2px] after:right-[2px] after:top-[2px] after:bottom-[2px] after:rounded-md after:bg-transparent after:pointer-events-none">
           <form
             id="contact-form"
             action="https://formspree.io/f/meqwpvaq"
