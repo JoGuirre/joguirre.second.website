@@ -4,7 +4,7 @@ import WorkLinks from "./WorkLinks";
 
 function About() {
   return (
-    <div id="about-container" className="">
+    <div id="about-container" className="pt-4">
       <WorkLinks />
       <h1 className="text-left pl-6 text-3xl font-bold mb-4">About Me</h1>
       <Paragraph aboutMe={aboutMe} />

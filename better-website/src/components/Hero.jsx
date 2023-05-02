@@ -46,20 +46,28 @@ function Hero() {
         setCurrentWord(newWord);
       }, 150 * index);
     });
-    // setTimeout(() => {
-    //   setHighlightedText("bg-blue-500");
-    // }, 4200);
-    // setTimeout(() => {
-    //   setCurrentWord("");
-    // }, 4500);
-    // setHighlightedText(null);
   }, [currentWordsIndex]);
 
   return (
-    <div id="hero-container" className="h-2/3 mb-[-55px]">
+    <div
+      id="hero-container"
+      className="h-2/3 mb-[-55px] pb-16 bg-gradient-to-tr from-gray-600 to-gray-900 mt-[-50px]"
+    >
+      <div id="hero-object" className="mx-4 pt-16">
+        <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
+          <img
+            src={carouselArray[currentSlideIndex]}
+            alt="picture of coding screen"
+            className="rounded-xl w-[99%] h-[99%]"
+          />
+          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-blue-300 bg-opacity-20">
+            <MyLogo />
+          </div>
+        </div>
+      </div>
       <div
         id="hero-words"
-        className="h-2/5 flex-col text-left pt-6 pl-6 bg-gradient-to-tr from-gray-600 to-gray-900 relative"
+        className="h-2/5 flex-col text-left pt-6 pl-6 relative"
       >
         <h1 className="text-4xl font-bold pb-3">
           Hi, I'm{" "}
@@ -104,18 +112,6 @@ function Hero() {
           <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
             <SiVite size="1.5em" color="#e600ff" className="w-full" />
             <h4>Vite</h4>
-          </div>
-        </div>
-      </div>
-      <div id="hero-object" className="mx-4 mt-6">
-        <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
-          <img
-            src={carouselArray[currentSlideIndex]}
-            alt="picture of coding screen"
-            className="rounded-xl w-[99%] h-[99%]"
-          />
-          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-blue-300 bg-opacity-20">
-            <MyLogo />
           </div>
         </div>
       </div>
