@@ -32,10 +32,13 @@ function Hero() {
         setCurrentWord(newWord);
       }, 150 * index);
     });
-    setTimeout(() => {
-      setHighlightedText("bg-blue-500");
-    }, 4200);
-    setHighlightedText(null);
+    // setTimeout(() => {
+    //   setHighlightedText("bg-blue-500");
+    // }, 4200);
+    // setTimeout(() => {
+    //   setCurrentWord("");
+    // }, 4500);
+    // setHighlightedText(null);
   }, [currentWordsIndex]);
 
   return (
@@ -53,7 +56,7 @@ function Hero() {
         <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
         <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
         <h3
-          className={`text-xs font-medium ml-3 px-1 w-fit ${highlightedText}`}
+          className={`text-sm font-bold ml-7 w-fit text-blue-700 text-opacity-90`}
         >
           {currentWord}
         </h3>

@@ -81,7 +81,7 @@ function Contact() {
               id="submit-button"
               disabled={state.submitting}
               onClick={() => setIsOpen(true)}
-              className="rounded-xl w-1/3 py-2 px-4 mt-4 ml-8 bg-[#c2f3ff] border border-black rounded-lg after:border after:border-black after:content-[''] after:absolute after:left-[2px] after:right-[2px] after:top-[2px] after:bottom-[2px] after:rounded-md after:bg-transparent"
+              className="rounded-xl w-1/3 py-2 px-4 mt-4 ml-8 bg-[#c2f3ff] border border-black rounded-lg"
             >
               Send
             </button>
