@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import MyLogo from "./MyLogo";
+
 import codePic from "../assets/code-pic.jpg";
 import codePic1 from "../assets/code-pic-1.jpg";
 import codePic2 from "../assets/code-pic-2.jpg";
@@ -106,12 +108,15 @@ function Hero() {
         </div>
       </div>
       <div id="hero-object" className="mx-4 mt-6">
-        <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center ">
+        <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
           <img
             src={carouselArray[currentSlideIndex]}
             alt="picture of coding screen"
             className="rounded-xl w-[99%] h-[99%]"
           />
+          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-blue-300 bg-opacity-20">
+            <MyLogo />
+          </div>
         </div>
       </div>
     </div>
