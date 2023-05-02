@@ -2,7 +2,7 @@
     {
         "id": "0",
         "title": "Introduction",
-        "content": "I was initially drawn to web development due to my limited experience with programming in the Navy, and after pursuing computer science studies for a brief period. Since then, I have been completely self-taught, and specialize in HTML/CSS, JavaScript, Reactjs, and Bootstrap."
+        "content": "I was initially drawn to web development due to my limited experience with programming in the Navy, and after pursuing computer science studies for a brief period. Since then, I have been completely self-taught, and specialize in HTML/CSS, JavaScript, Reactjs, TailwindCSS, and Bootstrap. I'm always learning new technologies!"
     },
     {
         "id": "1",
@@ -32,6 +32,6 @@
     {
         "id": "6",
         "title": "Passion for Web Development",
-        "content": "What sets me apart from other web developers is my genuine love for what I do. The challenge of web development keeps me in a 'grind mindset' and I find joy in the process of bringing a website to life."
+        "content": "What sets me apart from other web developers is my genuine love for what I do. The challenge of web development keeps me excited and I find joy in the process of bringing a website to life."
     }
 ]
