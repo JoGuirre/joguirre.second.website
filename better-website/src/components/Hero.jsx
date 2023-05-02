@@ -3,9 +3,21 @@ import codePic from "../assets/code-pic.jpg";
 import codePic1 from "../assets/code-pic-1.jpg";
 import codePic2 from "../assets/code-pic-2.jpg";
 
+import { IoLogoCss3, IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
+import { GrReactjs } from "react-icons/gr";
+import { SiVite } from "react-icons/si";
+
 function Hero() {
   const carouselArray = [codePic, codePic1, codePic2];
-  const thingsIAmArray = ["Navy Veteran", "Guitarist", "Gamer", "Cool Guy"];
+  const thingsIAmArray = [
+    "Navy Veteran",
+    "Guitar Player",
+    "Gamer",
+    "Cool Guy",
+    "Obscure Music Listener",
+    "Plant Dad",
+    "Dog Lover",
+  ];
   const [highlightedText, setHighlightedText] = useState("");
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -45,7 +57,7 @@ function Hero() {
     <div id="hero-container" className="h-2/3">
       <div
         id="hero-words"
-        className="h-1/2 flex-col text-left pt-6 pl-6 bg-gradient-to-tr from-gray-600 to-gray-900"
+        className="h-2/5 flex-col text-left pt-6 pl-6 bg-gradient-to-tr from-gray-600 to-gray-900 relative"
       >
         <h1 className="text-4xl font-bold pb-3">
           Hi, I'm{" "}
@@ -56,12 +68,40 @@ function Hero() {
         <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
         <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
         <h3
-          className={`text-sm font-bold ml-7 w-fit text-blue-700 text-opacity-90`}
+          className={`text-sm font-bold ml-7 w-fit text-white text-opacity-30`}
         >
           {currentWord}
         </h3>
+        <div
+          id="tech-stack"
+          className="flex w-[95%] absolute right-3 bottom-1 justify-around h-12 text-xs font-semibold text-gray-800"
+        >
+          {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
+            Tools:
+          </h4> */}
+          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
+            <IoLogoHtml5 size="1.5em" color="#ff6f00" className="w-full" />
+            <h4>HTML</h4>
+          </div>
+          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
+            <IoLogoCss3 size="1.5em" color="#00bbff" className="w-full" />
+            <h4>CSS</h4>
+          </div>
+          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
+            <IoLogoJavascript size="1.5em" color="#ffe600" className="w-full" />
+            <h4 className="">JavaScript</h4>
+          </div>
+          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
+            <GrReactjs size="1.5em" color="#00e5ff" className="w-full" />
+            <h4>ReactJS</h4>
+          </div>
+          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
+            <SiVite size="1.5em" color="#e600ff" className="w-full" />
+            <h4>Vite</h4>
+          </div>
+        </div>
       </div>
-      <div id="hero-object" className="h-1/2 mx-4 mt-6">
+      <div id="hero-object" className="mx-4 mt-6">
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center ">
           <img
             src={carouselArray[currentSlideIndex]}

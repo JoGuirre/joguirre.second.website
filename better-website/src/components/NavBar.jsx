@@ -13,9 +13,9 @@ function NavBar() {
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
           <a href="#about-container">About</a>
         </li>
-        <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
+        {/* <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
           <a href="#projects-container">Projects</a>
-        </li>
+        </li> */}
         <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
           <a href="#contact-container">Contact</a>
         </li>
