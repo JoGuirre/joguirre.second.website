@@ -5,19 +5,38 @@ import codePic2 from "../assets/code-pic-2.jpg";
 
 function Hero() {
   const carouselArray = [codePic, codePic1, codePic2];
-  const [nextCarouselSlide, setNextCarouselSlide] = useState(carouselArray[2]);
-  let arrayIndex = 0;
+  const thingsIAmArray = ["Navy Veteran", "Guitarist", "Gamer", "Cool Guy"];
+  const [highlightedText, setHighlightedText] = useState("");
+
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [currentWord, setCurrentWord] = useState("");
+  const [currentWordsIndex, setCurrentWordsIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (arrayIndex == carouselArray.length - 1) {
-        arrayIndex = 0;
-      } else {
-        setNextCarouselSlide(carouselArray[arrayIndex]);
-        arrayIndex++;
-      }
-    }, 6000);
-  }, [nextCarouselSlide]);
+    setTimeout(() => {
+      const nextIndexPics = (currentSlideIndex + 1) % carouselArray.length;
+      setCurrentSlideIndex(nextIndexPics);
+    }, 10000);
+  }, [currentSlideIndex]);
+
+  useEffect(() => {
+    const nextIndexWords = (currentWordsIndex + 1) % thingsIAmArray.length;
+    setTimeout(() => {
+      setCurrentWordsIndex(nextIndexWords);
+    }, 5000);
+    const splitWordArray = thingsIAmArray[nextIndexWords].split("");
+    let newWord = "";
+    splitWordArray.map((letter, index) => {
+      setTimeout(() => {
+        newWord = newWord + letter;
+        setCurrentWord(newWord);
+      }, 150 * index);
+    });
+    setTimeout(() => {
+      setHighlightedText("bg-blue-500");
+    }, 4200);
+    setHighlightedText(null);
+  }, [currentWordsIndex]);
 
   return (
     <div id="hero-container" className="h-2/3">
@@ -33,11 +52,16 @@ function Hero() {
         </h1>
         <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
         <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
+        <h3
+          className={`text-xs font-medium ml-3 px-1 w-fit ${highlightedText}`}
+        >
+          {currentWord}
+        </h3>
       </div>
-      <div id="hero-object" className="h-1/2 mx-4 mt-6 ">
+      <div id="hero-object" className="h-1/2 mx-4 mt-6">
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center ">
           <img
-            src={nextCarouselSlide}
+            src={carouselArray[currentSlideIndex]}
             alt="picture of coding screen"
             className="rounded-xl w-[99%] h-[99%]"
           />
