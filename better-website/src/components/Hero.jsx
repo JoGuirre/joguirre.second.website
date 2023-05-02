@@ -5,7 +5,7 @@ import codePic2 from "../assets/code-pic-2.jpg";
 
 import { IoLogoCss3, IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
-import { SiVite } from "react-icons/si";
+import { SiVite, SiTailwindcss } from "react-icons/si";
 
 function Hero() {
   const carouselArray = [codePic, codePic1, codePic2];
@@ -86,6 +86,10 @@ function Hero() {
           <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
             <IoLogoCss3 size="1.5em" color="#00bbff" className="w-full" />
             <h4>CSS</h4>
+          </div>
+          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
+            <SiTailwindcss size="1.5em" color="#00bbff" className="w-full" />
+            <h4>TailwindCSS</h4>
           </div>
           <div className="flex-col rounded-lg bg-white bg-opacity-30 px-2 py-2">
             <IoLogoJavascript size="1.5em" color="#ffe600" className="w-full" />
