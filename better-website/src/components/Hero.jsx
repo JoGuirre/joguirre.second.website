@@ -88,53 +88,53 @@ function Hero() {
         >
           {currentWord}
         </h3>
-        <div
-          id="tech-stack"
-          className="flex flex-row flex-wrap gap-4 justify-center w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800"
-        >
-          {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
+      </div>
+      <div
+        id="tech-stack"
+        className="flex flex-row flex-wrap gap-4 justify-center w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800 ml-[2.5%] self-center"
+      >
+        {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
             Tools:
           </h4> */}
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoHtml5 size="1.5em" color="#ff6f00" className="" />
-            <h4 className="">HTML</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoCss3 size="1.5em" color="#00bbff" className="" />
-            <h4 className="">CSS</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiTailwindcss size="1.5em" color="#00bbff" className="" />
-            <h4 className="">TailwindCSS</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoJavascript size="1.5em" color="#ffe600" className="" />
-            <h4 className="">JavaScript</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <GrReactjs size="1.5em" color="#00e5ff" className="" />
-            <h4 className="">ReactJS</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiVite size="1.5em" color="#0077c7" className="" />
-            <h4 className="">Vite</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiWebpack size="1.5em" color="#8aedff" className="" />
-            <h4 className="">WebPack</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoNodejs size="1.5em" color="#107800" className="" />
-            <h4 className="">Node.js</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiExpress size="1.5em" color="#1ac200" className="" />
-            <h4 className="">express</h4>
-          </div>
-          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoSass size="1.5em" color="#ff00ee" className="" />
-            <h4 className="">Sass</h4>
-          </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <IoLogoHtml5 size="1.5em" color="#ff6f00" className="" />
+          <h4 className="">HTML</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <IoLogoCss3 size="1.5em" color="#00bbff" className="" />
+          <h4 className="">CSS</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <SiTailwindcss size="1.5em" color="#00bbff" className="" />
+          <h4 className="">TailwindCSS</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <IoLogoJavascript size="1.5em" color="#ffe600" className="" />
+          <h4 className="">JavaScript</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <GrReactjs size="1.5em" color="#00e5ff" className="" />
+          <h4 className="">ReactJS</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <SiVite size="1.5em" color="#0077c7" className="" />
+          <h4 className="">Vite</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <SiWebpack size="1.5em" color="#8aedff" className="" />
+          <h4 className="">WebPack</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <IoLogoNodejs size="1.5em" color="#107800" className="" />
+          <h4 className="">Node.js</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <SiExpress size="1.5em" color="#1ac200" className="" />
+          <h4 className="">express</h4>
+        </div>
+        <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <IoLogoSass size="1.5em" color="#ff00ee" className="" />
+          <h4 className="">Sass</h4>
         </div>
       </div>
     </div>
