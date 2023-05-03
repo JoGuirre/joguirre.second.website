@@ -6,9 +6,15 @@ import codePic from "../assets/code-pic.jpg";
 import codePic1 from "../assets/code-pic-1.jpg";
 import codePic2 from "../assets/code-pic-2.jpg";
 
-import { IoLogoCss3, IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
+import {
+  IoLogoCss3,
+  IoLogoJavascript,
+  IoLogoHtml5,
+  IoLogoNodejs,
+  IoLogoSass,
+} from "react-icons/io";
 import { GrReactjs } from "react-icons/gr";
-import { SiVite, SiTailwindcss } from "react-icons/si";
+import { SiVite, SiTailwindcss, SiWebpack, SiExpress } from "react-icons/si";
 
 function Hero() {
   const carouselArray = [codePic, codePic1, codePic2];
@@ -84,7 +90,7 @@ function Hero() {
         </h3>
         <div
           id="tech-stack"
-          className="flex flex-row flex-wrap justify-between w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800"
+          className="flex flex-row flex-wrap gap-4 justify-center w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800 border"
         >
           {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
             Tools:
@@ -110,8 +116,24 @@ function Hero() {
             <h4 className="">ReactJS</h4>
           </div>
           <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiVite size="1.5em" color="#e600ff" className="" />
+            <SiVite size="1.5em" color="#0077c7" className="" />
             <h4 className="">Vite</h4>
+          </div>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <SiWebpack size="1.5em" color="#8aedff" className="" />
+            <h4 className="">WebPack</h4>
+          </div>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <IoLogoNodejs size="1.5em" color="#107800" className="" />
+            <h4 className="">Node.js</h4>
+          </div>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <SiExpress size="1.5em" color="#1ac200" className="" />
+            <h4 className="">express</h4>
+          </div>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <IoLogoSass size="1.5em" color="#ff00ee" className="" />
+            <h4 className="">Sass</h4>
           </div>
         </div>
       </div>
