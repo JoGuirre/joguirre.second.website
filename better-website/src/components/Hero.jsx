@@ -84,34 +84,34 @@ function Hero() {
         </h3>
         <div
           id="tech-stack"
-          className="flex mt-8 w-[95%] justify-between h-12 text-xs font-semibold text-gray-800"
+          className="flex flex-row justify-between w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800"
         >
           {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
             Tools:
           </h4> */}
-          <div className="flex-col justify-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoHtml5 size="1.5em" color="#ff6f00" className="w-full" />
-            <h4>HTML</h4>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <IoLogoHtml5 size="1.5em" color="#ff6f00" className="" />
+            <h4 className="">HTML</h4>
           </div>
-          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoCss3 size="1.5em" color="#00bbff" className="w-full" />
-            <h4>CSS</h4>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <IoLogoCss3 size="1.5em" color="#00bbff" className="" />
+            <h4 className="">CSS</h4>
           </div>
-          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiTailwindcss size="1.5em" color="#00bbff" className="w-full" />
-            <h4>TailwindCSS</h4>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <SiTailwindcss size="1.5em" color="#00bbff" className="" />
+            <h4 className="">TailwindCSS</h4>
           </div>
-          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <IoLogoJavascript size="1.5em" color="#ffe600" className="w-full" />
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <IoLogoJavascript size="1.5em" color="#ffe600" className="" />
             <h4 className="">JavaScript</h4>
           </div>
-          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <GrReactjs size="1.5em" color="#00e5ff" className="w-full" />
-            <h4>ReactJS</h4>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <GrReactjs size="1.5em" color="#00e5ff" className="" />
+            <h4 className="">ReactJS</h4>
           </div>
-          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-1 py-2">
-            <SiVite size="1.5em" color="#e600ff" className="w-full" />
-            <h4>Vite</h4>
+          <div className="flex flex-col items-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
+            <SiVite size="1.5em" color="#e600ff" className="" />
+            <h4 className="">Vite</h4>
           </div>
         </div>
       </div>
