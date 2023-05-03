@@ -73,7 +73,7 @@ function Hero() {
       <WorkLinks />
       <div
         id="hero-words"
-        className="h-[9em] flex-col pt-2 text-left pl-6 relative bg-gradient-to-r from-[#96eaff] to-[#a3ffdd] text-black rounded-xl mx-6"
+        className="h-[9em] flex-col pt-2 text-left pl-6 relative bg-gradient-to-r from-[#96eaff] to-[#a3ffdd] text-black rounded-xl mx-6 mt-4"
       >
         <h1 className="text-3xl font-bold pb-1 mb-3">
           Hi, I'm{" "}
