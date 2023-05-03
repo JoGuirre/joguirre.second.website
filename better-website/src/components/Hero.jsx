@@ -57,7 +57,7 @@ function Hero() {
             alt="picture of coding screen"
             className="rounded-xl w-[99%] h-[99%]"
           />
-          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-blue-300 bg-opacity-20">
+          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-amber-100 bg-opacity-20">
             <MyLogo />
           </div>
         </div>
