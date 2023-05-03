@@ -10,7 +10,7 @@ function App() {
     <>
       <div
         id="page-container"
-        className="w-auto h-screen relative overflow-x-hidden scroll-smooth bg-gradient-to-b from-gray-900 to-slate-600"
+        className="flex flex-col w-auto h-screen relative overflow-x-hidden scroll-smooth bg-gradient-to-b from-gray-900 to-slate-600"
       >
         <NavBar />
         <Hero />

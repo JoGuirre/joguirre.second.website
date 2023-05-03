@@ -4,7 +4,7 @@ import aboutMe from "../utilities/aboutMe.json";
 
 function About() {
   return (
-    <div id="about-container" className="mt-16 pt-8">
+    <div id="about-container" className="mt-32 pt-8">
       {/* <WorkLinks /> */}
       <h1 className="text-left pl-6 text-3xl font-bold mb-4">About Me</h1>
       <Paragraph aboutMe={aboutMe} />

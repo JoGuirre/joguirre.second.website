@@ -90,7 +90,7 @@ function Hero() {
         </h3>
         <div
           id="tech-stack"
-          className="flex flex-row flex-wrap gap-4 justify-center w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800 border"
+          className="flex flex-row flex-wrap gap-4 justify-center w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800"
         >
           {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
             Tools:
