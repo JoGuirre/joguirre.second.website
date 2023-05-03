@@ -73,18 +73,18 @@ function Hero() {
       <WorkLinks />
       <div
         id="hero-words"
-        className="h-2/5 flex-col pt-2 text-left pl-6 relative"
+        className="h-[9em] flex-col pt-2 text-left pl-6 relative bg-gradient-to-r from-slate-300 to-violet-300 text-black rounded-xl mx-6"
       >
-        <h1 className="text-4xl font-bold pb-3">
+        <h1 className="text-3xl font-bold pb-1 mb-3">
           Hi, I'm{" "}
-          <span className="bg-gradient-to-tr from-cyan-300 to-indigo-700 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-tl from-orange-500 to-amber-600 bg-clip-text text-transparent text-4xl font-extrabold">
             Josh
           </span>
         </h1>
         <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
         <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
         <h3
-          className={`text-sm font-bold ml-7 w-fit text-white text-opacity-30`}
+          className={`text-sm font-bold ml-7 w-fit text-black text-opacity-40`}
         >
           {currentWord}
         </h3>
