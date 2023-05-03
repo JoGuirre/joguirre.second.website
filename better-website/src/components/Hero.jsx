@@ -89,7 +89,7 @@ function Hero() {
           {/* <h4 className="w-fit text-md font-bold text-blue-300 mt-[2px]">
             Tools:
           </h4> */}
-          <div className="flex-col rounded-lg bg-white bg-opacity-30 px-1 py-2">
+          <div className="flex-col justify-center rounded-lg bg-white bg-opacity-30 px-1 py-2">
             <IoLogoHtml5 size="1.5em" color="#ff6f00" className="w-full" />
             <h4>HTML</h4>
           </div>
