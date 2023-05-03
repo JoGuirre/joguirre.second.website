@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import aboutMe from "../utilities/aboutMe.json";
-// import WorkLinks from "./WorkLinks";
 
 function About() {
   return (
-    <div id="about-container" className="mt-[175px] pt-8">
-      {/* <WorkLinks /> */}
+    <div id="about-container" className="mt-[175px] pt-12">
       <h1 className="text-left pl-6 text-3xl font-bold mb-4">About Me</h1>
       <Paragraph aboutMe={aboutMe} />
     </div>
@@ -14,18 +12,6 @@ function About() {
 
 function Paragraph({ aboutMe }) {
   const [currentPanelId, setCurrentPanelId] = useState(null);
-
-  // Did this for no reason, but its cool to remember
-
-  // const { titles, contents } = aboutMe.reduce(
-  //   (acc, current) => {
-  //     return {
-  //       titles: [...acc.titles, current.title],
-  //       contents: [...acc.contents, current.content],
-  //     };
-  //   },
-  //   { titles: [], contents: [] }
-  // );
 
   const clickHandler = (panelId) => {
     return () => setCurrentPanelId(panelId);

@@ -19,7 +19,7 @@ export const techStackFileArr = [
     id: "1",
     name: "CSS",
     componentName: IoLogoCss3,
-    color: "#00acdb",
+    color: "#009dff",
   },
   {
     id: "2",
@@ -43,19 +43,19 @@ export const techStackFileArr = [
     id: "5",
     name: "Vite",
     componentName: SiVite,
-    color: "#fc99ff",
+    color: "#00bfff",
   },
   {
     id: "6",
     name: "WebPack",
     componentName: SiWebpack,
-    color: "#0099ff",
+    color: "#00d5ff",
   },
   {
     id: "7",
     name: "Node.js",
     componentName: IoLogoNodejs,
-    color: "#00c213",
+    color: "#00ff19",
   },
   {
     id: "8",

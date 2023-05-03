@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 function TechStack({ CompName, name, id, color }) {
   return (
     <div
-      key={id}
+      id={id}
       className="rounded-xl bg-white bg-opacity-50 p-2 flex flex-col items-center "
     >
-      <CompName color={color} size="2.2em" />
+      <CompName color={color} size="2.5em" />
       <h1>{name}</h1>
     </div>
   );

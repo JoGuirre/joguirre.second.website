@@ -87,8 +87,8 @@ function Hero() {
             <TechStack
               CompName={tech.componentName}
               color={tech.color}
-              id={tech.id}
               name={tech.name}
+              id={tech.id}
             />
           );
         })}
