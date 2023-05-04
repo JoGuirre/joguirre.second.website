@@ -10,17 +10,17 @@ function Contact() {
       {/* <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6 pb-3">
         Contact Me
       </h1> */}
-      <div className="mx-6 mb-32">
+      <div className="mx-6 mb-32 mt-8">
         <div className="">
           <h1 className="text-2xl font-bold">Like what you see?</h1>
           <h2 className="text-lg font-semibold pt-2">Contact me below!</h2>
         </div>
-        <div className="relative rounded-lg p-4 mt-2 drop-shadow-[0px_7px_0px_#519db0] bg-white border border-black rounded-lg mb-1 mt-5 after:border after:border-black after:content-[''] after:absolute after:left-[2px] after:right-[2px] after:top-[2px] after:bottom-[2px] after:rounded-md after:bg-transparent after:pointer-events-none">
+        <div className="flex flex-row relative flex-wrap mt-8 mx-2 px-6 py-4 justify-center font-semibold bg-textcolor text-bgcolor text-md rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9] after:pointer-events-none">
           <form
             id="contact-form"
             action="https://formspree.io/f/meqwpvaq"
             onSubmit={handleSubmit}
-            className="flex flex-wrap text-black"
+            className="flex flex-wrap"
           >
             <label htmlFor="name" className="mt-1">
               Name
@@ -30,7 +30,7 @@ function Contact() {
               id="name"
               name="name"
               required
-              className="w-full rounded-lg z-10 bg-white border border-black rounded-lg after:border after:border-black after:content-[''] after:absolute after:left-[2px] after:right-[2px] after:top-[2px] after:bottom-[2px] after:rounded-md after:bg-transparent px-2 py-1 bg-[#c2f3ff]"
+              className="w-full rounded-lg z-10 bg-white border border-black rounded-lg px-2 py-1"
             />
 
             <label htmlFor="email" className="mt-1">
