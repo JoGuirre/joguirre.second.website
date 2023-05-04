@@ -54,10 +54,10 @@ function Hero() {
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
           <img
             src={carouselArray[currentSlideIndex]}
-            alt="picture of coding screen"
+            alt="background picture for logo"
             className="rounded-xl w-[99%] h-[99%]"
           />
-          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-amber-100 bg-opacity-20">
+          <div className="absolute rounded-xl left-0 top-0 w-full h-full rounded-xl px-4 py-3 backdrop-blur-sm bg-fifthcolor bg-opacity-10">
             <MyLogo />
           </div>
         </div>
@@ -65,11 +65,11 @@ function Hero() {
       <WorkLinks />
       <div
         id="hero-words"
-        className="h-[9em] flex-col pt-2 text-left pl-6 relative bg-gradient-to-r from-[#96eaff] to-[#a3ffdd] text-black rounded-xl mx-6 mt-4"
+        className="px-4 py-4 mx-6 flex-col text-left relative bg-gradient-to-r from-textcolor to-textcolor text-bgcolor rounded-xl"
       >
         <h1 className="text-3xl font-bold pb-1 mb-3">
           Hi, I'm{" "}
-          <span className="bg-gradient-to-tl from-orange-300 to-red-500 bg-clip-text text-transparent text-4xl font-extrabold">
+          <span className="bg-gradient-to-tl from-bgcolor to-sixthcolor bg-clip-text text-transparent text-4xl font-extrabold">
             Josh
           </span>
         </h1>
@@ -81,7 +81,7 @@ function Hero() {
           {currentWord}
         </h3>
       </div>
-      <div className="flex flex-row flex-wrap gap-4 justify-center w-[95%] mt-8 h-12 text-xs font-semibold text-gray-800 ml-[2.5%] self-center">
+      <div className="flex flex-row flex-wrap mt-12 mb-8 mx-6 p-2 gap-4 justify-center text-xs font-semibold bg-textcolor rounded-xl">
         {techStackFileArr.map((tech) => {
           return (
             <TechStack

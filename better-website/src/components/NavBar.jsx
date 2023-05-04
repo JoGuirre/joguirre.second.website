@@ -4,27 +4,22 @@ function NavBar() {
   return (
     <nav
       id="navbar-container"
-      className="sticky top-0 border-b rounded-b-sm shadow-md shadow-gray-600 bg-transparent backdrop-blur-md z-50"
+      className="sticky mx-12 top-2 mt-2 border rounded-xl shadow-sm shadow-textcolor bg-textcolor bg-opacity-10 backdrop-blur-md z-50"
     >
-      <ul className="flex justify-around text-xl font-semibold pt-2 mb-1">
-        <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#hero-container">Home</a>
-        </li>
-        <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#about-container">About</a>
-        </li>
-        {/* <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#projects-container">Projects</a>
-        </li> */}
-        <li className="px-1 border-hidden rounded-sm hover:bg-gray-200 hover:text-black">
-          <a href="#contact-container">Contact</a>
-        </li>
+      <ul className="flex justify-center gap-10 text-xl font-semibold pt-1 pb-1">
+        <NavItems link="#hero-container" title="Home" />
+        <NavItems link="#about-container" title="About" />
+        <NavItems link="#contact-container" title="Contact" />
       </ul>
-
-      <div className="hidden w-full h-0 flex justify-center absolute top-6">
-        <div className="border-b bg-blue-900 rounded-full w-8 h-8">&nbsp;</div>
-      </div>
     </nav>
+  );
+}
+
+function NavItems({ link, title }) {
+  return (
+    <li className="px-2 py-1 border-hidden rounded-md font-bold">
+      <a href={link}>{title}</a>
+    </li>
   );
 }
 
