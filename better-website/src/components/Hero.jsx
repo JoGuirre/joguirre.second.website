@@ -49,7 +49,7 @@ function Hero() {
   }, [currentWordsIndex]);
 
   return (
-    <div id="hero-container" className="h-2/3 mb-[-55px] pb-16 mt-[-50px]">
+    <div id="hero-container" className="mb-[-55px] pb-16 mt-[-50px]">
       <div id="hero-object" className="mx-4 pt-16">
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
           <img
