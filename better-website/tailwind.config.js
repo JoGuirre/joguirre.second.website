@@ -4,13 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        textcolor: "#faf3dd", //beige
-        secondcolor: "#c8d5b9", // light green
-        thirdcolor: "#8fc0a9", // seafoam
-        fourthcolor: "#68b0ab", // verdigris
-        fifthcolor: "#4B90AD", // grayish
-        sixthcolor: "#767DAD", //compliment to first
+        textcolor: "#faf3dd",
         bgcolor: "#87A0AD",
+        bordercolor: "#ffa600",
+        accentcolor: "#6ac3c4",
       },
     },
   },

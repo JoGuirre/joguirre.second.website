@@ -5,7 +5,7 @@ function TechStack({ CompName, name, id, color }) {
   return (
     <div
       id={id}
-      className="rounded-xl bg-bgcolor text-textcolor bg-opacity-100 p-2 flex flex-col items-center "
+      className="rounded-lg bg-bgcolor text-textcolor bg-opacity-100 p-2 flex flex-col items-center border border-bordercolor"
     >
       <CompName color={color} size="2.5em" />
       <h1>{name}</h1>
