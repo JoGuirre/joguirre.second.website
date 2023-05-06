@@ -10,12 +10,14 @@ function Contact() {
       {/* <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6 pb-3">
         Contact Me
       </h1> */}
-      <div className="mx-6 mb-32 mt-8">
-        <div className="">
-          <h1 className="text-2xl font-bold">Like what you see?</h1>
-          <h2 className="text-lg font-semibold pt-2">Contact me below!</h2>
+      <div className="mx-6 mb-32 mt-8 md:flex">
+        <div className="md:flex-1 md:pt-16">
+          <h1 className="text-2xl font-bold md:text-4xl">Like what you see?</h1>
+          <h2 className="text-lg font-semibold pt-2 md:text-2xl">
+            Contact me below!
+          </h2>
         </div>
-        <div className="flex flex-row relative flex-wrap mt-8 mx-2 px-6 py-4 justify-center font-semibold bg-textcolor text-bgcolor text-md rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9] after:pointer-events-none">
+        <div className="flex flex-row relative flex-wrap mt-8 mx-2 px-6 py-4 justify-center font-semibold bg-textcolor text-bgcolor text-md rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9] after:pointer-events-none md:flex-1">
           <form
             id="contact-form"
             action="https://formspree.io/f/meqwpvaq"
@@ -81,7 +83,7 @@ function Contact() {
               id="submit-button"
               disabled={state.submitting}
               onClick={() => setIsOpen(true)}
-              className="rounded-xl w-1/3 py-2 px-4 mt-4 ml-8 bg-[#c2f3ff] border border-black rounded-lg"
+              className="rounded-xl w-1/3 py-2 px-4 mt-4 ml-8 bg-bordercolor text-textcolor hover:bg-accentcolor border border-accentcolor hover:border-bordercolor transition duration-200 rounded-lg"
             >
               Send
             </button>
