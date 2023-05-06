@@ -2,7 +2,8 @@ import React from "react";
 
 function NavBar() {
   return (
-    <div className="fixed flex justify-center bottom-0 w-full p-4 z-50 bg-bgcolor bg-opacity-20 rounded-md backdrop-blur-lg">
+    <div className="fixed flex justify-center w-full bottom-0 p-4 z-50 bg-bgcolor bg-opacity-20 rounded-md backdrop-blur-lg md:sticky md:top-0 md:justify-end">
+      <div className="md:visible border flex-1">Logo</div>
       <nav
         id="navbar-container"
         className="mb-0 px border rounded-xl shadow-sm shadow-textcolor bg-accentcolor border-2 border-bordercolor bg-opacity-60 backdrop-blur-md z-50"

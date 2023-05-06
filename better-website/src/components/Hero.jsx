@@ -14,12 +14,10 @@ function Hero() {
   const thingsIAmArray = [
     "Navy Veteran",
     "Guitar Player",
-    "Gamer",
     "Cool Guy",
     "Obscure Music Enthusiast",
     "Plant Dad",
     "Dog Lover",
-    "Stardew Farmer",
   ];
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -49,7 +47,7 @@ function Hero() {
   }, [currentWordsIndex]);
 
   return (
-    <div id="hero-container" className="mb-[-55px] pb-16">
+    <div id="hero-container" className="pb-16 md:pb-4">
       <div id="hero-object" className="mx-4 mt-8 mb-4">
         <div className="m-2 h-60 rounded-xl bg-white flex justify-center items-center relative">
           <img
@@ -63,38 +61,40 @@ function Hero() {
         </div>
       </div>
       <WorkLinks />
-      <div
-        id="hero-words"
-        className="px-4 py-4 mx-6 mt-6 flex flex-col text-left relative bg-gradient-to-r from-textcolor to-textcolor text-bgcolor rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9]"
-      >
-        {/* <div className="border border-transparent absolute w-11/12 rounded-lg mt-32 bg-accentcolor self-center">
+      <div className="md:flex">
+        <div
+          id="hero-words"
+          className="px-4 py-4 mx-6 mt-6 flex flex-col text-left relative bg-gradient-to-r from-textcolor to-textcolor text-bgcolor rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9] md:w-1/2 md:my-12 md:mx-8"
+        >
+          {/* <div className="border border-transparent absolute w-11/12 rounded-lg mt-32 bg-accentcolor self-center">
           &nbsp;
         </div> */}
-        <h1 className="text-3xl font-bold pb-1 mb-3">
-          Hi, I'm{" "}
-          <span className="bg-gradient-to-tl from-bordercolor to-accentcolor bg-clip-text text-transparent text-4xl font-extrabold">
-            Josh
-          </span>
-        </h1>
-        <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
-        <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
-        <h3
-          className={`text-sm font-bold ml-7 w-fit text-bordercolor text-opacity-80`}
-        >
-          {currentWord}
-        </h3>
-      </div>
-      <div className="flex flex-row relative flex-wrap mt-12 mb-8 mx-6 px-2 py-4 gap-4 justify-center text-xs font-semibold bg-textcolor rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9]">
-        {techStackFileArr.map((tech) => {
-          return (
-            <TechStack
-              CompName={tech.componentName}
-              color={tech.color}
-              name={tech.name}
-              id={tech.id}
-            />
-          );
-        })}
+          <h1 className="text-3xl font-bold pb-1 mb-3">
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-tl from-bordercolor to-accentcolor bg-clip-text text-transparent text-4xl font-extrabold">
+              Josh
+            </span>
+          </h1>
+          <h2 className="text-xl font-semibold pl-4">Web Developer</h2>
+          <h3 className="text-sm font-medium pl-4">Front-End | Back-End</h3>
+          <h3
+            className={`text-sm font-bold ml-7 w-fit text-bordercolor text-opacity-80`}
+          >
+            {currentWord}
+          </h3>
+        </div>
+        <div className="flex flex-row relative flex-wrap mt-12 mb-8 mx-6 px-2 py-4 gap-4 justify-center text-xs font-semibold bg-textcolor rounded-xl border-2 border-bordercolor before:border before:border-transparent before:absolute before:w-[95%] before:rounded-lg before:bottom-[-15px] before:bg-accentcolor before:self-center before:h-8 before:z-[-9] md:w-1/2 md:my-12 md:mx-8">
+          {techStackFileArr.map((tech) => {
+            return (
+              <TechStack
+                CompName={tech.componentName}
+                color={tech.color}
+                name={tech.name}
+                id={tech.id}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

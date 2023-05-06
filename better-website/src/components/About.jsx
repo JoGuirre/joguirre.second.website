@@ -3,8 +3,8 @@ import aboutMe from "../utilities/aboutMe.json";
 
 function About() {
   return (
-    <div id="about-container" className="">
-      <h1 className="text-left pl-6 text-3xl font-bold mb-4">About Me</h1>
+    <div id="about-container" className="flex flex-col">
+      {/* <h1 className="text-left pl-6 text-3xl font-bold mb-4">About Me</h1> */}
       <Paragraph aboutMe={aboutMe} />
     </div>
   );
@@ -18,16 +18,15 @@ function Paragraph({ aboutMe }) {
   };
 
   return (
-    <div id="#about-container">
+    <div id="#about-container" className="md:flex md:flex-col">
       {aboutMe.map((section) => {
         return (
-          <div className="relative flex flex-col">
+          <div className="relative flex flex-col md:odd:items-start md:even:items-end">
             <div
-              id="hero-words"
               key={section.id}
               className="mx-6 flex flex-col mt-6 text-left relative
               bg-gradient-to-r from-textcolor to-textcolor text-bgcolor
-              rounded-t-xl rounded-b-md border-2 border-bordercolor"
+              rounded-t-xl rounded-b-md border-2 border-bordercolor md:w-2/5"
             >
               <button
                 onClick={clickHandler(section.id)}
@@ -38,12 +37,12 @@ function Paragraph({ aboutMe }) {
             </div>
             <div>
               {section.id == currentPanelId ? (
-                <p className="bg-textcolor relative flex flex-col justify-center text-bgcolor mt-2 font-medium mx-6 p-4 rounded-b-xl rounded-t-md -none border border-2 border-bordercolor">
+                <p className="bg-textcolor relative flex flex-col justify-center text-bgcolor mt-2 font-medium mx-6 p-4 rounded-b-xl rounded-t-md -none border border-2 border-bordercolor md:w-2/5">
                   {section.content}
                 </p>
               ) : null}
             </div>
-            <div className="self-center absolute border border-transparent w-[85%] rounded-lg bottom-[-8px] bg-accentcolor h-8 z-[-9]">
+            <div className="self-center absolute border border-transparent w-[85%] rounded-lg bottom-[-8px] bg-accentcolor h-8 z-[-9] md:w-2/5">
               &nbsp;
             </div>
           </div>
