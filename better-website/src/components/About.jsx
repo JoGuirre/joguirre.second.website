@@ -22,7 +22,7 @@ function Paragraph({ aboutMe }) {
       {aboutMe.map((section) => {
         return (
           <div className="relative flex flex-col md:even:items-end md:odd:items-start md:my-6">
-            <div className="flex flex-col md:w-[45%]">
+            <div className="flex flex-col md:w-1/2">
               <div
                 key={section.id}
                 className="mx-6 flex flex-col mt-6 text-left relative
